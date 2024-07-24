@@ -1,5 +1,9 @@
 {
     "name": "client",
+<<<<<<< HEAD
+=======
+    "proxy": "https://blog-app-backend-mzeb.onrender.com",
+>>>>>>> refs/remotes/origin/main
     "version": "0.1.0",
     "private": true,
     "dependencies": {
