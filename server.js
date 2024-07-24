@@ -31,8 +31,8 @@ app.use("/api/v1/blog", blogRoutes);
 const PORT = process.env.PORT || 8080;
 //listen
 app.listen(PORT, () => {
-  console.log(
-    `Server Running on ${process.env.DEV_MODE} mode port no ${PORT}`.bgCyan
-      .white
-  );
+    console.log(
+        `Server Running on mode port no ${PORT}`.bgCyan
+        .white
+    );
 });
