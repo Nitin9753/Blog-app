@@ -6,6 +6,8 @@ import { useDispatch } from "react-redux";
 import { authActions } from "../redux/store";
 import toast from "react-hot-toast";
 const Login = () => {
+
+    const baseURL = "https://blog-app-backend-mzeb.onrender.com/";
     const navigate = useNavigate();
     const dispatch = useDispatch();
     //state
@@ -26,7 +28,7 @@ const Login = () => {
     const handleSubmit = async(e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post("/api/v1/user/login", {
+            const { data } = await axios.post(`${baseURL}/api/v1/user/login`, {
                 email: inputs.email,
                 password: inputs.password,
             });

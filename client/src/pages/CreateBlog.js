@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { Box, Button, InputLabel, TextField, Typography } from "@mui/material";
 import toast from "react-hot-toast";
 const CreateBlog = () => {
+
+    const baseURL = "https://blog-app-backend-mzeb.onrender.com/";
     const id = localStorage.getItem("userId");
     const navigate = useNavigate();
     const [inputs, setInputs] = useState({
@@ -22,7 +24,7 @@ const CreateBlog = () => {
     const handleSubmit = async(e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post("/api/v1/blog/create-blog", {
+            const { data } = await axios.post(`${baseURL}/api/v1/blog/create-blog`, {
                 title: inputs.title,
                 description: inputs.description,
                 image: inputs.image,

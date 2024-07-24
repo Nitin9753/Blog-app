@@ -8,10 +8,13 @@ const BlogDetails = () => {
     const id = useParams().id;
     const navigate = useNavigate();
     const [inputs, setInputs] = useState({});
+
+    const baseURL = "https://blog-app-backend-mzeb.onrender.com/";
     // get blog details
     const getBlogDetail = async() => {
+
         try {
-            const { data } = await axios.get(`/api/v1/blog/get-blog/${id}`);
+            const { data } = await axios.get(`${baseURL}/api/v1/blog/get-blog/${id}`);
             if (data ? data.success : false) {
                 setBlog(data ? data.blog : false);
                 setInputs({
@@ -41,7 +44,7 @@ const BlogDetails = () => {
     const handleSubmit = async(e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.put(`/api/v1/blog/update-blog/${id}`, {
+            const { data } = await axios.put(`${baseURL}/api/v1/blog/update-blog/${id}`, {
                 title: inputs.title,
                 description: inputs.description,
                 image: inputs.image,

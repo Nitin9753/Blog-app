@@ -4,11 +4,12 @@ import BlogCard from "../components/BlogCard";
 const UserBlogs = () => {
     const [blogs, setBlogs] = useState([]);
 
+    const baseURL = "https://blog-app-backend-mzeb.onrender.com/";
     //get user blogs
     const getUserBlogs = async() => {
         try {
             const id = localStorage.getItem("userId");
-            const { data } = await axios.get(`/api/v1/blog/user-blog/${id}`);
+            const { data } = await axios.get(`${baseURL}/api/v1/blog/user-blog/${id}`);
             if (data ? data.success : false) {
                 setBlogs(data.userBlog.blogs);
             }

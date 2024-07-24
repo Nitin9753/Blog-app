@@ -5,6 +5,8 @@ import toast from "react-hot-toast";
 import axios from "axios";
 const Register = () => {
     const navigate = useNavigate();
+
+    const baseURL = "https://blog-app-backend-mzeb.onrender.com/";
     //state
     const [inputs, setInputs] = useState({
         name: "",
@@ -24,7 +26,7 @@ const Register = () => {
     const handleSubmit = async(e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post("/api/v1/user/register", {
+            const { data } = await axios.post(`${baseURL}/api/v1/user/register`, {
                 username: inputs.name,
                 email: inputs.email,
                 password: inputs.password,
