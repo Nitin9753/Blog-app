@@ -6,7 +6,7 @@ import axios from "axios";
 const Register = () => {
     const navigate = useNavigate();
 
-    const baseURL = "https://blog-app-backend-mzeb.onrender.com/";
+    const baseURL = "https://blog-app-backend-mzeb.onrender.com";
     //state
     const [inputs, setInputs] = useState({
         name: "",

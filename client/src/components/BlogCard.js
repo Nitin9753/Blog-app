@@ -26,7 +26,7 @@ export default function BlogCard({
     const handleEdit = () => {
         navigate(`/blog-details/${id}`);
     };
-    const baseURL = "https://blog-app-backend-mzeb.onrender.com/";
+    const baseURL = "https://blog-app-backend-mzeb.onrender.com";
     const handleDelete = async() => {
         try {
             const { data } = await axios.delete(`${baseURL}/api/v1/blog/delete-blog/${id}`);

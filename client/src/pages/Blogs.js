@@ -5,7 +5,7 @@ const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
     //get blogs
 
-    const baseURL = "https://blog-app-backend-mzeb.onrender.com/";
+    const baseURL = "https://blog-app-backend-mzeb.onrender.com";
     const getAllBlogs = async() => {
         try {
             const { data } = await axios.get(`${baseURL}/api/v1/blog/all-blog`);

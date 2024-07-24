@@ -9,7 +9,7 @@ const BlogDetails = () => {
     const navigate = useNavigate();
     const [inputs, setInputs] = useState({});
 
-    const baseURL = "https://blog-app-backend-mzeb.onrender.com/";
+    const baseURL = "https://blog-app-backend-mzeb.onrender.com";
     // get blog details
     const getBlogDetail = async() => {
 

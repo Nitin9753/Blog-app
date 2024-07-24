@@ -7,7 +7,7 @@ import { authActions } from "../redux/store";
 import toast from "react-hot-toast";
 const Login = () => {
 
-    const baseURL = "https://blog-app-backend-mzeb.onrender.com/";
+    const baseURL = "https://blog-app-backend-mzeb.onrender.com";
     const navigate = useNavigate();
     const dispatch = useDispatch();
     //state
