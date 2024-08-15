@@ -26,7 +26,7 @@ export default function BlogCard({
     const handleEdit = () => {
         navigate(`/blog-details/${id}`);
     };
-    const baseURL = "https://blog-app-backend-mzeb.onrender.com";
+    const baseURL = "https://blogwebsitebackend-igs8.onrender.com";
     const handleDelete = async() => {
         try {
             const { data } = await axios.delete(`${baseURL}/api/v1/blog/delete-blog/${id}`);
@@ -51,14 +51,14 @@ export default function BlogCard({
                     boxShadow: "10px 10px 20px #ccc",
                 },
             }
-        } >
-        {
+        } > {
             isUser && ( <
                 Box display = { "flex" } >
                 <
                 IconButton onClick = { handleEdit }
                 sx = {
-                    { marginLeft: "auto" } } >
+                    { marginLeft: "auto" }
+                } >
                 <
                 ModeEditIcon color = "info" / >
                 <
@@ -67,13 +67,14 @@ export default function BlogCard({
                 <
                 DeleteIcon color = "error" / >
                 <
-                /IconButton> <
-                /Box>
+                /IconButton> < /
+                Box >
             )
         } <
         CardHeader avatar = { <
             Avatar sx = {
-                { bgcolor: red[500] } } > { username } <
+                { bgcolor: red[500] }
+            } > { username } <
             /Avatar>
         }
         title = { username }
@@ -93,8 +94,8 @@ export default function BlogCard({
         Typography variant = "body2"
         color = "text.secondary" >
         Description: { description } <
-        /Typography> <
-        /CardContent> <
+        /Typography> < /
+        CardContent > <
         /Card>
     );
 }

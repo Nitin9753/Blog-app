@@ -9,7 +9,7 @@ const BlogDetails = () => {
     const navigate = useNavigate();
     const [inputs, setInputs] = useState({});
 
-    const baseURL = "https://blog-app-backend-mzeb.onrender.com";
+    const baseURL = "https://blogwebsitebackend-igs8.onrender.com";
     // get blog details
     const getBlogDetail = async() => {
 
@@ -83,7 +83,8 @@ const BlogDetails = () => {
         Update A Pots <
         /Typography> <
         InputLabel sx = {
-            { mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" } } >
+            { mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }
+        } >
         Title <
         /InputLabel> <
         TextField name = "title"
@@ -95,7 +96,8 @@ const BlogDetails = () => {
         >
         <
         InputLabel sx = {
-            { mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" } } >
+            { mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }
+        } >
         Description <
         /InputLabel> <
         TextField name = "description"
@@ -107,7 +109,8 @@ const BlogDetails = () => {
         >
         <
         InputLabel sx = {
-            { mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" } } >
+            { mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }
+        } >
         Image URL <
         /InputLabel> <
         TextField name = "image"
@@ -122,10 +125,10 @@ const BlogDetails = () => {
         color = "warning"
         variant = "contained" >
         UPDATE <
-        /Button> <
-        /Box> <
-        /form> <
-        /v>
+        /Button> < /
+        Box > <
+        /form> < /
+        v >
     );
 };
 

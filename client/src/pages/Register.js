@@ -6,7 +6,7 @@ import axios from "axios";
 const Register = () => {
     const navigate = useNavigate();
 
-    const baseURL = "https://blog-app-backend-mzeb.onrender.com";
+    const baseURL = "https://blogwebsitebackend-igs8.onrender.com";
     //state
     const [inputs, setInputs] = useState({
         name: "",
@@ -58,7 +58,8 @@ const Register = () => {
         <
         Typography variant = "h4"
         sx = {
-            { textTransform: "uppercase" } }
+            { textTransform: "uppercase" }
+        }
         padding = { 3 }
         textAlign = "center" >
         Register <
@@ -90,20 +91,23 @@ const Register = () => {
         <
         Button type = "submit"
         sx = {
-            { borderRadius: 3, marginTop: 3 } }
+            { borderRadius: 3, marginTop: 3 }
+        }
         variant = "contained"
         color = "primary" >
         Submit <
         /Button> <
         Button onClick = {
-            () => navigate("/login") }
+            () => navigate("/login")
+        }
         sx = {
-            { borderRadius: 3, marginTop: 3 } } >
+            { borderRadius: 3, marginTop: 3 }
+        } >
         Already Registerd ? Please Login <
-        /Button> <
-        /Box> <
-        /form> <
-        />
+        /Button> < /
+        Box > <
+        /form> < /
+        >
     );
 };
 

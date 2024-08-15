@@ -7,7 +7,7 @@ import { authActions } from "../redux/store";
 import toast from "react-hot-toast";
 const Login = () => {
 
-    const baseURL = "https://blog-app-backend-mzeb.onrender.com";
+    const baseURL = "https://blogwebsitebackend-igs8.onrender.com";
     const navigate = useNavigate();
     const dispatch = useDispatch();
     //state
@@ -61,7 +61,8 @@ const Login = () => {
         <
         Typography variant = "h4"
         sx = {
-            { textTransform: "uppercase" } }
+            { textTransform: "uppercase" }
+        }
         padding = { 3 }
         textAlign = "center" >
         Login <
@@ -86,20 +87,23 @@ const Login = () => {
         <
         Button type = "submit"
         sx = {
-            { borderRadius: 3, marginTop: 3 } }
+            { borderRadius: 3, marginTop: 3 }
+        }
         variant = "contained"
         color = "primary" >
         Submit <
         /Button> <
         Button onClick = {
-            () => navigate("/register") }
+            () => navigate("/register")
+        }
         sx = {
-            { borderRadius: 3, marginTop: 3 } } >
+            { borderRadius: 3, marginTop: 3 }
+        } >
         Not a user ? Please Register <
-        /Button> <
-        /Box> <
-        /form> <
-        />
+        /Button> < /
+        Box > <
+        /form> < /
+        >
     );
 };
 

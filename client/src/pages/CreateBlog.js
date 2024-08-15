@@ -5,7 +5,7 @@ import { Box, Button, InputLabel, TextField, Typography } from "@mui/material";
 import toast from "react-hot-toast";
 const CreateBlog = () => {
 
-    const baseURL = "https://blog-app-backend-mzeb.onrender.com";
+    const baseURL = "https://blogwebsitebackend-igs8.onrender.com";
     const id = localStorage.getItem("userId");
     const navigate = useNavigate();
     const [inputs, setInputs] = useState({
@@ -62,7 +62,8 @@ const CreateBlog = () => {
         Create A Pots <
         /Typography> <
         InputLabel sx = {
-            { mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" } } >
+            { mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }
+        } >
         Title <
         /InputLabel> <
         TextField name = "title"
@@ -74,7 +75,8 @@ const CreateBlog = () => {
         >
         <
         InputLabel sx = {
-            { mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" } } >
+            { mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }
+        } >
         Description <
         /InputLabel> <
         TextField name = "description"
@@ -86,7 +88,8 @@ const CreateBlog = () => {
         >
         <
         InputLabel sx = {
-            { mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" } } >
+            { mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }
+        } >
         Image URL <
         /InputLabel> <
         TextField name = "image"
@@ -101,10 +104,10 @@ const CreateBlog = () => {
         color = "primary"
         variant = "contained" >
         SUBMIT <
-        /Button> <
-        /Box> <
-        /form> <
-        />
+        /Button> < /
+        Box > <
+        /form> < /
+        >
     );
 };
 
