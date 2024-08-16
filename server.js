@@ -37,6 +37,6 @@ app.listen(PORT, () => {
     );
 });
 
-app.get("/", (req, res) {
+app.get("/", (req, res) => {
     res.send("<h1>This is a blog app server</h1>");
 })

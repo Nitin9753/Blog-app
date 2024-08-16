@@ -4,7 +4,7 @@ import BlogCard from "../components/BlogCard";
 const UserBlogs = () => {
     const [blogs, setBlogs] = useState([]);
 
-    const baseURL = "https://blogwebsitebackend-igs8.onrender.com";
+    const baseURL = "https://blog-app-lk7f.onrender.com";
     //get user blogs
     const getUserBlogs = async() => {
         try {

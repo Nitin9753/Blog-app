@@ -6,7 +6,7 @@ import axios from "axios";
 const Register = () => {
     const navigate = useNavigate();
 
-    const baseURL = "https://blogwebsitebackend-igs8.onrender.com";
+    const baseURL = "https://blog-app-lk7f.onrender.com";
     //state
     const [inputs, setInputs] = useState({
         name: "",
@@ -106,8 +106,7 @@ const Register = () => {
         Already Registerd ? Please Login <
         /Button> < /
         Box > <
-        /form> < /
-        >
+        /form> < / >
     );
 };
 

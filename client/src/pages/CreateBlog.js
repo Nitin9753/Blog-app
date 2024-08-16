@@ -5,7 +5,7 @@ import { Box, Button, InputLabel, TextField, Typography } from "@mui/material";
 import toast from "react-hot-toast";
 const CreateBlog = () => {
 
-    const baseURL = "https://blogwebsitebackend-igs8.onrender.com";
+    const baseURL = "https://blog-app-lk7f.onrender.com";
     const id = localStorage.getItem("userId");
     const navigate = useNavigate();
     const [inputs, setInputs] = useState({
@@ -106,8 +106,7 @@ const CreateBlog = () => {
         SUBMIT <
         /Button> < /
         Box > <
-        /form> < /
-        >
+        /form> < / >
     );
 };
 
